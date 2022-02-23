@@ -4,19 +4,19 @@ Analysis of Lending Club's credit card credit dataset to predict credit risk (an
 ## Background
 Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans.  Therefore, this analysis will employ different techniques to train and evaluate models with unbalanced classes using the imbalanced-learn and skikit-learn libraries
 
-To address the unbalanced nature of this problem (many low-risk loans vs. few high-risk loans) this analysis will use various oversampling and undersampling methods to include: RandomOverSampler, SMOTE, ClusterCentroids, and SMOTEENN. All of these technques will be compared using the Logistics Regression Classifier
+To address the unbalanced nature of this problem (many low-risk loans vs. few high-risk loans) this analysis will use various oversampling and undersampling methods to include: RandomOverSampler, SMOTE, ClusterCentroids, and SMOTEENN. All of these technques will be employed as a pre-processing step and assessed using the Logistics Regression Classifier
 
 Additionally this analysis will investigate two ensemble learning methods, the BalancedRandomForestclassifier and the EasyEnsembleClassifer from the imbalanced-learn library
 
 
 The following "data dictionary" was referenced to understand the many statuses in the Leading Club Dataset
-[Leading Club Dataset](https://help.lendingclub.com/hc/en-us/articles/215488038-What-do-the-different-Note-statuses-mean-)
+[Leading Club Dataset Data Dictionary](https://help.lendingclub.com/hc/en-us/articles/215488038-What-do-the-different-Note-statuses-mean-)
 
 
 ## Deliverables / Analaysis
 
 ### Findings:
-The resampling models did not generate an acceptable model (low f1 scores -less than 0.08)
+The logistics regression model using the over/under sampling techniques did not generate an acceptable model
 
 The EasyEnsembleClassifier did the best in classifying the loan_status as high_risk with an f1 score of 0.16. While not a great model is performed the best out of those considered.
 
@@ -37,6 +37,7 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
     ![RandomOverSampler Confusion Matrix](./Images/RandomOverSampler_confusion_matrix.png)
 
   - An imbalanced classification report was been generated <br>
+  - Note: The terms from left to right are precision, recall, specificity, geometric mean, and index balanced accuracy.
     ![RansomOverSampler imbalanced classification report](./Images/RandomOverSampler_imballanced_classification_report.png)
 * **SMOTE**
   - An accuracy score for the model was calculated as 0.8325

@@ -37,7 +37,7 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
     ![RandomOverSampler Confusion Matrix](./Images/RandomOverSampler_confusion_matrix.png)
 
   - An imbalanced classification report was been generated <br>
-  - Note: The terms from left to right are precision, recall, specificity, geometric mean, and index balanced accuracy.
+  - Note: The terms (from left to right are) pre is precision, rec is recall, spe is specificity, f1 is f1-score, geo is geometric mean, iba is index balanced accuracy and sup is support.
     ![RansomOverSampler imbalanced classification report](./Images/RandomOverSampler_imballanced_classification_report.png)
 * **SMOTE**
   - An accuracy score for the model was calculated as 0.8325

@@ -26,14 +26,14 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
 * Deliverable 4: A Written Report on the Credit Risk Analysis 
 
 ### Deliverable 1: Use Resampling Models to Predict Credit Risk
-* For all three algorithms, the following have been completed:
+* For all three algorithms, the following were completed:
   - An accuracy score for the model was calculated 
-  - A confusion matrix was been generated 
-  - An imbalanced classification report was been generated 
+  - A confusion matrix was generated 
+  - An imbalanced classification report was generated 
 
 **Benchmark - No over/under sampling**
   - An accuracy score for the model was calculated as 0.9951
-  - A confusion matrix was been generated <br>
+  - A confusion matrix was generated <br>
     ![Benchmark Confusion Matrix](./Images/Baseline_confusion_matrix.png)
 
   - An imbalanced classification report was generated <br>
@@ -51,14 +51,14 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
   - An accuracy score for the model was calculated as 0.8325
   - A confusion matrix was generated <br>
     ![SMOTE Confusion Matrix](./Images/SMOTE_confusion_matrix.png)
-  - An imbalanced classification report was been generated <br>
+  - An imbalanced classification report was generated <br>
     ![SMOTE imbalanced classification report](./Images/SMOTE_imballanced_classification_report.png)
 
 * **ClusterCentroids**
   - An accuracy score for the model was calculated as 0.8325
   - A confusion matrix was generated <br>
     ![ClusterCentroids Confusion Matrix](./Images/ClusterCentroids_confusion_matrix.png)
-  - An imbalanced classification report was been generated <br>
+  - An imbalanced classification report was generated <br>
     ![ClusterCentroids imbalanced classification report](./Images/ClusterCentroids_imballanced_classification_report.png)
 
 ### Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk

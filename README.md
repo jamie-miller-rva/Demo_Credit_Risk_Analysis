@@ -31,24 +31,32 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
   - A confusion matrix was been generated 
   - An imbalanced classification report was been generated 
 
+**Benchmark - No over/under sampling**
+  - An accuracy score for the model was calculated as 0.9951
+  - A confusion matrix was been generated <br>
+    ![Benchmark Confusion Matrix](./Images/Baseline_confusion_matrix.png)
+
+  - An imbalanced classification report was generated <br>
+  - Note: The terms (from left to right are) pre is precision, rec is recall, spe is specificity, f1 is f1-score, geo is geometric mean, iba is index balanced accuracy and sup is support.
+    ![Benchmark imbalanced classification report](./Images/Baseline_imballanced_classification_report.png)
+
 * **RandomOverSampler**
   - An accuracy score for the model was calculated as 0.8325
-  - A confusion matrix was been generated <br>
+  - A confusion matrix was generated <br>
     ![RandomOverSampler Confusion Matrix](./Images/RandomOverSampler_confusion_matrix.png)
 
-  - An imbalanced classification report was been generated <br>
-  - Note: The terms (from left to right are) pre is precision, rec is recall, spe is specificity, f1 is f1-score, geo is geometric mean, iba is index balanced accuracy and sup is support.
+  - An imbalanced classification report was generated <br>
     ![RansomOverSampler imbalanced classification report](./Images/RandomOverSampler_imballanced_classification_report.png)
 * **SMOTE**
   - An accuracy score for the model was calculated as 0.8325
-  - A confusion matrix was been generated <br>
+  - A confusion matrix was generated <br>
     ![SMOTE Confusion Matrix](./Images/SMOTE_confusion_matrix.png)
   - An imbalanced classification report was been generated <br>
     ![SMOTE imbalanced classification report](./Images/SMOTE_imballanced_classification_report.png)
 
 * **ClusterCentroids**
   - An accuracy score for the model was calculated as 0.8325
-  - A confusion matrix was been generated <br>
+  - A confusion matrix was generated <br>
     ![ClusterCentroids Confusion Matrix](./Images/ClusterCentroids_confusion_matrix.png)
   - An imbalanced classification report was been generated <br>
     ![ClusterCentroids imbalanced classification report](./Images/ClusterCentroids_imballanced_classification_report.png)
@@ -57,25 +65,25 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
 * The combinatorial SMOTEENN algorithm had the following:
 **SMOTEENN**
   - An accuracy score for the model was calculated 0.8389
-  - A confusion matrix was been generated <br>
+  - A confusion matrix was generated <br>
     ![SMOTEENN Confusion Matrix](./Images/SMOTEENN_confusion_matrix.png)
-  - An imbalanced classification report was been generated <br>
+  - An imbalanced classification report was generated <br>
     ![SMOTEENN imbalanced classification repor](./Images/SMOTE_imballanced_classification_report.png)
 
 
 ### Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 * The BalancedRandomForestClassifier algorithm does the following:
   - An accuracy score for the model was 0.759
-  - A confusion matrix has been generated <br>
+  - A confusion matrix was generated <br>
     ![BalancedRandomForestClassifier Confusion Matrix](./Images/BalancedRandomForestClassifier_confusion_matrix.png)
-  - An imbalanced classification report has been generated <br>
+  - An imbalanced classification report was generated <br>
     ![BalancedRandomForestClassifier imbalanced classification report](./Images/BalancedRandomForestClassifier_imballanced_classification_report.png)
-  - The features are sorted in descending order by feature importance <br>
+  - The features were sorted in descending order by feature importance <br>
     ![BalancedRandomForestClassifier feature importance](./Images/BalancedRandomForestClassifier_feature_importance.png)
 
 * The EasyEnsembleClassifier algorithm does the following:
   - An accuracy score of the model was 0.9319
-  - A confusion matrix has been generated <br>
+  - A confusion matrix was generated <br>
     ![EasyEnsembleClassifier Confusion Matrix](./Images/EasyEnsembleClassifier_confusion_matrix.png)
-  - An imbalanced classification report has been generated <br>
+  - An imbalanced classification report was generated <br>
     ![EasyEnsembleClassifier imbalanced classification report](./Images/EasyEnsembleClassifier_imballanced_classification_report.png)

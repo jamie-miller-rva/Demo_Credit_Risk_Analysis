@@ -1,29 +1,44 @@
-# Demo_Credit_Risk_Analysis
-Analysis of Lending Club's credit card credit dataset to predict credit risk (an example of a "imbalanced" supervised classification ML problem)
+## Big Picture
+* Lending Club investers want to imploy Machine Learning to classify credit risk as "high risk" or "low risk."
 
-## Background
-Credit risk is an inherently unbalanced classification problem, as good loans easily outnumber risky loans.  Therefore, this analysis will employ different techniques to train and evaluate models with unbalanced classes using the imbalanced-learn and skikit-learn libraries
+* The Ask: Train several machine learning models on the LoanStats_2019Q1 dataset to classify credit risk using the loans_status column as the "target". 
 
-To address the unbalanced nature of this problem (many low-risk loans vs. few high-risk loans) this analysis will use various oversampling and undersampling methods to include: RandomOverSampler, SMOTE, ClusterCentroids, and SMOTEENN. All of these technques will be employed as a pre-processing step and assessed using the Logistics Regression Classifier
+## The Problem Redefined: 
+* Conduct Supervised Machine Learning
+* to Classifiy loans as either "high risk" or "low risk"
+* see [Lending Club Data Dictionary](https://www.kaggle.com/jonchan2003/lending-club-data-dictionary)
+* using loan_status as the target variable within the LoanStats_2019Q1 dataset. Note: values in the loan_status column do not contain "high risk" or "low risk" this will need to be inferred from the current list of values.
+* this is an imballanced problem (as per the customer) - less than 1% of loans are characterized as "low risk"
+* A list of 86 columns (out of the possible 144 columns) in the LoanStats_2019Q1 have been identified (by the customer) to contain information currently used in determining if a loan is "high risk" or "low risk".
+* python and the sklearn and imbalanced learn machine learning libraries have been identified as tools to be used in this analysis. 
+* The following ML Classification Algorithms will be used in this analysis: 
+    <br><br>
+    * Logistic regression classifier
+    * BalancedRandomForestClassifier
+    * EasyEnsembleClassifier <br><br>
+    
+- Due to the imballanced nature of this problem the customer has requested the following undersampling / oversampling "pre-processing" algorithms be included in the analysis:
+    <br><br>
+    * RansomOverSampler
+    * SMOTE
+    * ClusterCentroids
+    * SMOTEENN <br><br>
+- Module selection will be based on the following:
+    <br><br>
+    * balanced accuracy score
+    * confusion matrix
+    * balanced classification report <br><br>
 
-Additionally this analysis will investigate two ensemble learning methods, the BalancedRandomForestclassifier and the EasyEnsembleClassifer from the imbalanced-learn library
-
-
-The following "data dictionary" was referenced to understand the many statuses in the Leading Club Dataset
-[Leading Club Dataset Data Dictionary](https://help.lendingclub.com/hc/en-us/articles/215488038-What-do-the-different-Note-statuses-mean-)
-
-
-## Deliverables / Analaysis
-
-### Findings:
-The logistics regression model using the over/under sampling techniques did not generate an acceptable model
-
-The EasyEnsembleClassifier did the best in classifying the loan_status as high_risk with an f1 score of 0.16. While not a great model is performed the best out of those considered.
-
+### Deliverables:
 * Deliverable 1: Use Resampling Models to Predict Credit Risk
 * Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
 * Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 * Deliverable 4: A Written Report on the Credit Risk Analysis 
+
+### Findings:
+The logistics regression model using the over/under sampling techniques did not generate an acceptable model
+
+The EasyEnsembleClassifier did the best in classifying the loan_status as high_risk with an f1 score of 0.16. While not a great model, it's performanced was the best of those considered.
 
 ### Deliverable 1: Use Resampling Models to Predict Credit Risk
 * For all three algorithms, the following were completed:

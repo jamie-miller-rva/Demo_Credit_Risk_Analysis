@@ -1,5 +1,5 @@
 ## Big Picture
-* Lending Club investers want to imploy Machine Learning to classify credit risk as "high risk" or "low risk."
+* Lending Club investers want to explore the use of Machine Learning to classify credit risk as "high risk" or "low risk."
 
 * The Ask: Train several machine learning models on the LoanStats_2019Q1 dataset to classify credit risk using the loans_status column as the "target". 
 

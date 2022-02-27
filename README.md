@@ -64,5 +64,13 @@ The EasyEnsembleClassifier did the best in classifying the loan_status as high_r
 
 ![Ensemble_Slide](./Images/Ensemble_Slide.png)
 
-### The ml-project-checklist.md was referenced for this project
-[machine learning checklist](https://github.com/ageron/handson-ml/blob/master/ml-project-checklist.md)
+### References for this project
+* sklearn (https://scikit-learn.org/stable/)
+
+* Imbalanced Learn (https://imbalanced-learn.org/stable/)
+  
+* Metrics for Imbalanced Classification (https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/)
+
+* The ml-project-checklist.md was referenced for this project (https://github.com/ageron/handson-ml/blob/master/ml-project-checklist.md)
+
+* Kaggle Predict Loan Default (https://www.kaggle.com/c/predicting-loan-default)

@@ -41,26 +41,26 @@
 ### Findings:
 The logistics regression model using the over/under sampling techniques did not generate an acceptable model; however, SMOTE performed best among the resampling techniques assessed.
 
-The EasyEnsembleClassifier did the best overall in classifying the loan_status as high_risk with an f1 score of 0.18. While not a great model, it's performanced was the best of those considered.
+The EasyEnsembleClassifier did the best overall in classifying the loan_status as high_risk with an f1 score of 0.18. While not a great model, it performanced best of those considered.
 
 ![Summary Slide](./Images/Summary_Slide.png)
 
 ### Deliverable 1 & 2: Use Resampling Models to Predict Credit Risk
 * The Logistic Regression Classifier model was used to assess the performance of four resampling techniques. The data was cleaned and feature matrix was scaled using StandardScaler.
 
-* For all three algorithms, the following were completed:
-  - An accuracy score for the model was calculated 
-  - A confusion matrix was generated 
-  - An imbalanced classification report was generated 
+* The following metrics were identified for each model:
+  - An accuracy score
+  - A confusion matrix
+  - An imbalanced classification report
 
-* Findings:SMOTE performed best among the resampling techniques assessed with an f1 score of 0.06 and the highest specificity of 0.87
+* Findings: SMOTE performed best among the resampling techniques assessed with an f1 score of 0.06 and the highest specificity of 0.87
 
 ![Resample_slide](./Images/Resample_slide.png)
 
 
 ### Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 
-The EasyEnsembleClassifier did the best in classifying the loan_status as high_risk with an f1 score of 0.18. While not a great model, it's performanced was the best of those considered.
+The EasyEnsembleClassifier did the best in classifying the loan_status as high_risk with an f1 score of 0.18. While not a great model, it performanced best of those considered.
 
 ![Ensemble_Slide](./Images/Ensemble_Slide.png)
 
